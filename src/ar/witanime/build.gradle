@@ -1,7 +1,7 @@
 ext {
     extName = 'WIT ANIME'
     extClass = '.WitAnime'
-    extVersionCode = 55
+    extVersionCode = 60
 }
 
 apply from: "$rootDir/common.gradle"
@@ -13,3 +13,4 @@ dependencies {
     implementation(project(':lib:mp4upload-extractor'))
     implementation(project(':lib:vidbom-extractor'))
 }
+   
