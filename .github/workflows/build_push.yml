@@ -24,7 +24,7 @@ jobs:
           java-version: 17
           distribution: temurin
 
-      # THIS STEP CREATES THE MISSING .JKS FILE
+      # THIS STEP RECREATES THE MISSING .JKS FILE
       - name: Prepare signing key
         run: |
           echo "${{ secrets.SIGNING_KEY }}" | base64 -d > signingkey.jks
